@@ -1,28 +1,63 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Vuex 101 :)</h1>
+      </div>
+    </div>
+
+    <div class="row my-4">
+      <div
+        class="col-12 col-md-6 col-lg-4"
+        :key="game.title"
+        v-for="game in games"
+      >
+        <card
+          @click="removeGame(game);"
+          :name="game.title"
+          :image="game.img"
+        ></card>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" v-for="title in gameTitles" :key="title">
+        {{ title }}
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Card from "./components/Card";
+import data from "./data/data.json";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
-</script>
+    Card
+  },
+  methods: {
+    getFromAPI() {
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+      const apiData = data;
+      apiData.forEach(game => {
+        this.$store.dispatch("addGame", game);
+      });
+    },
+    removeGame(game) {
+        this.$store.dispatch("removeGame", game);
+    }
+  },
+  computed: {
+    gameTitles() {
+      return [];
+    },
+    games() {
+      return this.$store.state.games;
+    }
+  },
+  created() {
+    this.getFromAPI();
+  }
+};
+</script>
