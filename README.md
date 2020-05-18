@@ -32,6 +32,7 @@ See [Nano Activities - Vuex101](https://workshops.vuevixens.org/workshops/vue/na
 - **[Vue.js](https://vuejs.org/)**
 - **[Vuex](https://vuex.vuejs.org/)**
 - **[Bootstrap](https://getbootstrap.com/)**
+- **[Wikimedia](https://commons.wikimedia.org/wiki/Main_Page)**
 
 <p align="center">
 <img width="341" alt="vuex101" src="https://user-images.githubusercontent.com/44841405/82009233-2ff95280-9645-11ea-97ce-43337ebad823.png">
