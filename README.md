@@ -1,6 +1,6 @@
 # vuex101
 
-Projeto resultado do nano workshop das Vue Vixens usando a biblioteca Vuex para gerenciamento de estado.
+Projeto resultado do nano workshop das Vue Vixens. Foi criada uma coleção simples de cards com alguns títulos clássicos de videogame alimentados pela biblioteca de gerenciamento de estado Vuex.
 
 <img width="835" alt="vuex101-local" src="https://user-images.githubusercontent.com/44841405/82010198-c595e180-9647-11ea-8acf-c0a859b9c563.png">
 
@@ -32,6 +32,7 @@ See [Nano Activities - Vuex101](https://workshops.vuevixens.org/workshops/vue/na
 - **[Vue.js](https://vuejs.org/)**
 - **[Vuex](https://vuex.vuejs.org/)**
 - **[Bootstrap](https://getbootstrap.com/)**
+- **[Wikimedia](https://commons.wikimedia.org/wiki/Main_Page)**
 
 <p align="center">
 <img width="341" alt="vuex101" src="https://user-images.githubusercontent.com/44841405/82009233-2ff95280-9645-11ea-97ce-43337ebad823.png">
