@@ -20,6 +20,8 @@ yarn build
 # Lints and fixes files
 yarn lint
 ```
+#### Deploy
+https://vuex101.vercel.app/
 
 #### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
